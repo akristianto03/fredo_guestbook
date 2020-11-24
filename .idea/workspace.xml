@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67632784-a27b-4005-8232-68137e3c7aca" name="Default Changelist" comment="" />
+    <list default="true" id="67632784-a27b-4005-8232-68137e3c7aca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +201,8 @@
       <workItem from="1605833076336" duration="10301000" />
       <workItem from="1606096548740" duration="9800000" />
       <workItem from="1606150392252" duration="239000" />
-      <workItem from="1606218411736" duration="1705000" />
+      <workItem from="1606218411736" duration="1952000" />
+      <workItem from="1606223478861" duration="5111000" />
     </task>
     <servers />
   </component>
@@ -209,22 +214,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="691" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606103428665" />
-    <state x="100" y="270" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606218616393">
+    <state x="100" y="270" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606223541781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="100" y="270" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1280.680@0.0.1280.680" timestamp="1606218616393" />
+    <state x="100" y="270" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1280.680@0.0.1280.680" timestamp="1606223541781" />
     <state x="418" y="253" key="ComposerInitDialogKey" timestamp="1606100080620">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="418" y="253" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1606100080620" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1606218490939">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1606232879292">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606218490939" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606232879292" />
     <state x="552" y="138" key="Github.ShareDialog" timestamp="1606220155211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="552" y="138" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1606220155211" />
+    <state x="385" y="41" key="Github.UntrackedFilesDialog" timestamp="1606220173380">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="385" y="41" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606220173380" />
     <state width="597" height="165" key="GridCell.Tab.0.bottom" timestamp="1603625169682">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
