@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.main')
 
 @section('title', 'List Data')
 
@@ -11,7 +11,7 @@
 
 <div class="row mb-3" style="margin: auto; width: 60%;" >
     <div class="col-md-2 offset-md-10">
-        <a href="{{ route('student.create') }}" class="btn btn-primary btn-block" role="button" aria-pressed="true">Tambah</a>
+        <a href="{{ route('admin.event.create') }}" class="btn btn-primary btn-block" role="button" aria-pressed="true">Tambah</a>
     </div>
 </div>
 
@@ -21,34 +21,37 @@
             <table class="table">
                 <thead style="background: linear-gradient(120deg, #00e4d0, #5983e8);">
                     <tr>
-                        <th>Nama</th>
-                        <th>Nim</th>
-                        <th>Email</th>
-                        <th>Created</th>
-                        <th>Updated</th>
-                        <th>Picture</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Status</th>
+                        <th>Owned By</th>
+                        <th>Created At</th>
+                        <th>Updated At</th>
+                        @auth()
+                        <th>Action</th>
+                        @endauth
                     </tr>
                 </thead>
                 <tbody>
 
-                @foreach($students as $student)
+                @foreach($events as $event)
 
                     <tr>
-                        <td><a href="{{ route('student.edit', $student) }}">{{ $student->name }}</a></td>
-                        <td>{{$student->nim}}</td>
-                        <td>{{$student->email}}</td>
-                        <td>{{$student->updated_at}}</td>
-                        <td>{{$student->created_at}}</td>
+                        <td><a href="@auth() {{route('admin.event.edit', $event)}} @endauth">{{$event->title}}</a></td>
+                        <td>{{$event->description}}</td>
+                        <td>{{$event->status}}</td>
+                        <td>{{$event->creator->name}}</td>
+                        <td>{{$event->created_at}}</td>
+                        <td>{{$event->updated_at}}</td>
+                        @auth()
                         <td>
-                            <img src="/image/place/{{$student->picture}}" style="height: 100px;" alt="...">
-                        </td>
-                        <td>
-                        <form action="{{ route('student.destroy', $student) }}" method="post">
+                        <form action="{{ route('admin.event.destroy', $event) }}" method="post">
                             @csrf
                             <input type="hidden" name="_method" value="DELETE">
                             <button type="submit" class="btn btn-danger">Delete</button>
                         </form>
                         </td>
+                        @endauth
                     </tr>
 
                 @endforeach

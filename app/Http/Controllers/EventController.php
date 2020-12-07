@@ -42,7 +42,7 @@ class EventController extends Controller
         $data = $request->validate([
             'title' => 'required|string',
             'description' => 'required|string',
-            'created_by' => 'required|string', 
+            'created_by' => 'required|string',
             'event_date' => 'required|string',
         ]);
 
@@ -53,7 +53,7 @@ class EventController extends Controller
             'event_date' => $data['event_date'],
         ]);
 
-        return redirect()->route('event.index');
+        return redirect()->route('creator.event.index');
     }
 
     /**
@@ -88,7 +88,7 @@ class EventController extends Controller
     public function update(Request $request, Event $event)
     {
         $event->update($request->all());
-        return redirect()->route('event.index');
+        return redirect()->route('creator.event.index');
     }
 
     /**
@@ -100,6 +100,6 @@ class EventController extends Controller
     public function destroy(Event $event)
     {
         Event::destroy($event->id);
-        return redirect()->route('event.index');
+        return redirect()->route('creator.event.index');
     }
 }

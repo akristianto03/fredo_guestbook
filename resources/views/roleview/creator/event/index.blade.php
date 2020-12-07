@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.main')
 
 @section('title', 'List Data')
 
@@ -11,7 +11,7 @@
 
 <div class="row mb-3" style="margin: auto; width: 60%;" >
     <div class="col-md-2 offset-md-10">
-        <a href="{{ route('event.create') }}" class="btn btn-primary btn-block" role="button" aria-pressed="true">Tambah</a>
+        <a href="{{ route('creator.event.create') }}" class="btn btn-primary btn-block" role="button" aria-pressed="true">Tambah</a>
     </div>
 </div>
 
@@ -27,9 +27,8 @@
                         <th>Owned By</th>
                         <th>Created At</th>
                         <th>Updated At</th>
-                        @auth()
+                        <th>Detail</th>
                         <th>Action</th>
-                        @endauth
                     </tr>
                 </thead>
                 <tbody>
@@ -37,21 +36,25 @@
                 @foreach($events as $event)
 
                     <tr>
-                        <td><a href="@auth() {{route('event.edit', $event)}} @endauth">{{$event->title}}</a></td>
+                        <td><a href="@auth() {{route('creator.event.edit', $event)}} @endauth">{{$event->title}}</a></td>
                         <td>{{$event->description}}</td>
                         <td>{{$event->status}}</td>
                         <td>{{$event->creator->name}}</td>
                         <td>{{$event->created_at}}</td>
                         <td>{{$event->updated_at}}</td>
-                        @auth()
                         <td>
-                        <form action="{{ route('event.destroy', $event) }}" method="post">
-                            @csrf
-                            <input type="hidden" name="_method" value="DELETE">
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
+                            <form action="{{ route('creator.event.show', $event) }}" method="get">
+                                @csrf
+                                <button type="submit" name="" class="btn btn-primary">Detail</button>
+                            </form>
                         </td>
-                        @endauth
+                        <td>
+                            <form action="{{ route('creator.event.destroy', $event) }}" method="post">
+                                @csrf
+                                <input type="hidden" name="_method" value="DELETE">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
                     </tr>
 
                 @endforeach

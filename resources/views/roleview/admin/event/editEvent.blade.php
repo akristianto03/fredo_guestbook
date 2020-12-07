@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.main')
 
 @section('title', 'Add Event')
 
@@ -11,7 +11,7 @@
 
         <div class="row">
             <div class="col">
-                <form action="{{ route('event.update', $event) }}" method = "post">
+                <form action="{{ route('admin.event.update', $event) }}" method = "post">
                     @csrf
                     <input type="hidden" name="_method" value="PATCH">
                     <div class="form-group">

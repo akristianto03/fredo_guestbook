@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.main')
 
 @section('title', 'Add Event')
 
@@ -11,7 +11,7 @@
 
         <div class="row">
             <div class="col">
-                <form action="{{ route('event.store') }}" method = "post">
+                <form action="{{ route('creator.event.store') }}" method = "post">
                     @csrf
                     <div class="form-group">
                         <label>Title:</label>

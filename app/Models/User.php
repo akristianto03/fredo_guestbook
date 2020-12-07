@@ -52,8 +52,12 @@ class User extends Authenticatable
         return $this->hasMany(Event::class, 'created_by','id');
     }
 
-    public function role(){
+    public function role() {
         return $this->belongsTo(Role::class);
+    }
+
+    public function attends() {
+        return $this->belongsToMany(Event::class)->withPivot('is_approved')->withTimestamps();
     }
 
     public function isAdmin() {

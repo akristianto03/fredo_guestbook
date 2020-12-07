@@ -18,6 +18,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset('css/gradient-navbar.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/Simple-footer-by-krissy.css')}}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
     <title>@yield('title')</title>
   </head>
   <body class="text-center">
@@ -62,14 +64,19 @@
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/">Home</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/jadwal">Jadwal</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/kontak">Kontak</a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/event">Event</a></li>
+
                             <li class="nav-item" role="presentation"><a class="nav-link active" href="/student">Students</a></li>
 
                             @auth()
                                 @if(\Illuminate\Support\Facades\Auth::user()->isAdmin())
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="/user">User</a></li>
+                                    @include('layout/adminnav')
+                                @elseif(\Illuminate\Support\Facades\Auth::user()->isCreator())
+                                    @include('layout/creatornav')
+                                @else
+                                    @include('layout/usernav')
                                 @endif
                             @endauth
+
                         </ul>
                     </div>
                 </div>

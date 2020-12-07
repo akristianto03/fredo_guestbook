@@ -4,7 +4,7 @@ namespace App\Http;
 
 use App\Http\Middleware\Admin;
 use App\Http\Middleware\Creator;
-use App\Models\User;
+use App\Http\Middleware\Usermid;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
@@ -68,6 +68,6 @@ class Kernel extends HttpKernel
 
         'admin' => Admin::class,
         'creator' => Creator::class,
-        'usermid' => User::class,
+        'user' => Usermid::class,
     ];
 }

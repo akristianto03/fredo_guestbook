@@ -1,11 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
-use App\Http\Resources\Api\EventResource;
 use App\Models\Event;
-use App\Models\User;
 use Illuminate\Http\Request;
 
 class EventController extends Controller
@@ -18,7 +16,7 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::all();
-        return view('roleview.admin.event.index', compact('events'));
+        return view('roleview.user.event.index', compact('events'));
     }
 
     /**
@@ -28,9 +26,7 @@ class EventController extends Controller
      */
     public function create()
     {
-        $pages = 'event';
-        $users = User::all();
-        return view('roleview.admin.event.addEvent', compact('pages', 'users'));
+
     }
 
     /**
@@ -41,21 +37,7 @@ class EventController extends Controller
      */
     public function store(Request $request)
     {
-        $data = $request->validate([
-            'title' => 'required|string',
-            'description' => 'required|string',
-            'created_by' => 'required|string',
-            'event_date' => 'required|string',
-        ]);
 
-        Event::create([
-            'title' => $data['title'],
-            'description' => $data['description'],
-            'created_by' => $data['created_by'],
-            'event_date' => $data['event_date'],
-        ]);
-
-        return redirect()->route('admin.event.index');
     }
 
     /**
@@ -64,7 +46,7 @@ class EventController extends Controller
      * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Event $event)
     {
         //
     }
@@ -77,20 +59,19 @@ class EventController extends Controller
      */
     public function edit(Event $event)
     {
-        return view('roleview.admin.event.editEvent',compact('event'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Event  $event
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Event $event)
     {
-        $event->update($request->all());
-        return redirect()->route('admin.event.index');
+
     }
 
     /**
@@ -101,7 +82,6 @@ class EventController extends Controller
      */
     public function destroy(Event $event)
     {
-        Event::destroy($event->id);
-        return redirect()->route('admin.event.index');
+
     }
 }

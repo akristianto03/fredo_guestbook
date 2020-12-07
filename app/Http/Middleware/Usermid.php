@@ -23,7 +23,7 @@ class Usermid
             }
         }
 
-        return redirect('/')->with('error', 'Cant Access');
+        return redirect('/')->with('error', 'Can\'t Access');
 
     }
 }

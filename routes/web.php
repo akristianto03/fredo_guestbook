@@ -6,6 +6,10 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\User\UserController as UUserController;
+use \App\Http\Controllers\User\EventController as UserEventController;
+use \App\Http\Controllers\User\GuestController as UserGuestController;
+use \App\Http\Controllers\Creator\EventController as CreatorEventController;
+use \App\Http\Controllers\Creator\GuestController as CreatorGuestController;
 use App\Http\Controllers\Admin\EventController as AdminEventController;
 use App\Http\Controllers\Auth\ActivationController;
 
@@ -49,7 +53,11 @@ Route::group([
     'prefix' => 'creator',
     'as' => 'creator.'
 ], function (){
-    Route::resource('event', EventController::class);
+    Route::resource('event', CreatorEventController::class);
+    Route::resource('guest', CreatorGuestController::class);
+
+    Route::post('guests/{id}/approve', [CreatorGuestController::class, 'approve'])->name('guests.approve');
+    Route::post('guests/{id}/decline', [CreatorGuestController::class, 'decline'])->name('guests.decline');
 });
 
 Route::group([
@@ -57,7 +65,7 @@ Route::group([
     'prefix' => 'user',
     'as' => 'user.'
 ], function (){
-    Route::resource('user', UUserController::class);
+    Route::resource('event', UserGuestController::class);
 });
 
 // Route::get('/student', [StudentController::class, 'index'])->name('index');

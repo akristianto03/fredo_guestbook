@@ -11,7 +11,7 @@
 
 <div class="row mb-3" style="margin: auto; width: 60%;" >
     <div class="col-md-2 offset-md-10">
-        <a href="{{ route('event.create') }}" class="btn btn-primary btn-block" role="button" aria-pressed="true">Tambah</a>
+        <a href="{{ route('admin.user.create') }}" class="btn btn-primary btn-block" role="button" aria-pressed="true">Tambah</a>
     </div>
 </div>
 

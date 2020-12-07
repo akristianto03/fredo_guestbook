@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67632784-a27b-4005-8232-68137e3c7aca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/EventController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/adminnav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/creatornav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/usernav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/creator/event/addEvent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/creator/event/detail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/creator/event/detail/add_guest.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/creator/event/detail/guestlist.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/creator/event/editEvent.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/creator/event/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/user/event/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/roleview/user/event/modal/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/GuestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/GuestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Usermid.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Usermid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/event/addEvent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roleview/admin/event/addEvent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/event/editEvent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roleview/admin/event/editEvent.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/event/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roleview/admin/event/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/student/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/student/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +182,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../belajaran/shrall/guestbook-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -168,6 +192,18 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Program\XAMPP\htdocs\sem3\Week3_guestbook\guestbook\resources\views\roleview\user\event\model" />
+      <recent name="E:\Program\XAMPP\htdocs\sem3\Week3_guestbook\guestbook\resources\views\roleview\admin" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Program\XAMPP\htdocs\sem3\Week3_guestbook\guestbook\resources\views\roleview\creator\event\detail" />
+      <recent name="E:\Program\XAMPP\htdocs\sem3\Week3_guestbook\guestbook\app\Http\Controllers\User" />
+      <recent name="E:\Program\XAMPP\htdocs\sem3\Week3_guestbook\guestbook\resources\views\roleview\user" />
+      <recent name="E:\Program\XAMPP\htdocs\sem3\Week3_guestbook\guestbook\resources\views\roleview\creator" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
@@ -202,30 +238,53 @@
       <workItem from="1606096548740" duration="9800000" />
       <workItem from="1606150392252" duration="239000" />
       <workItem from="1606218411736" duration="1952000" />
-      <workItem from="1606223478861" duration="5111000" />
+      <workItem from="1606223478861" duration="6007000" />
+      <workItem from="1606406577341" duration="5225000" />
+      <workItem from="1606438176020" duration="8959000" />
+      <workItem from="1606453903768" duration="7110000" />
+      <workItem from="1606667190471" duration="596000" />
+      <workItem from="1606798840686" duration="9745000" />
+      <workItem from="1606814952977" duration="400000" />
+      <workItem from="1607045682852" duration="1638000" />
     </task>
+    <task id="LOCAL-00001" summary="Api test new feature:&#10;-Logout&#10;-Mengubah URI ke guestbook.test">
+      <created>1606237162586</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606237162589</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Api test new feature:&#10;-Logout&#10;-Mengubah URI ke guestbook.test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api test new feature:&#10;-Logout&#10;-Mengubah URI ke guestbook.test" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="691" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606103428665">
+    <state x="691" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606441914361">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="691" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606103428665" />
+    <state x="691" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606441914361" />
     <state x="100" y="270" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1606223541781">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="100" y="270" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#/0.0.1280.680@0.0.1280.680" timestamp="1606223541781" />
+    <state x="486" y="0" key="CommitChangelistDialog2" timestamp="1606237161442">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="486" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1606237161442" />
     <state x="418" y="253" key="ComposerInitDialogKey" timestamp="1606100080620">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="418" y="253" key="ComposerInitDialogKey/0.0.1280.680@0.0.1280.680" timestamp="1606100080620" />
-    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1606232879292">
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1606801604195">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606232879292" />
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606801604195" />
     <state x="552" y="138" key="Github.ShareDialog" timestamp="1606220155211">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -254,10 +313,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="284" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603616252685" />
+    <state x="466" y="74" key="Vcs.Push.Dialog.v2" timestamp="1606237182440">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="466" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606237182440" />
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605339383944">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="93" y="93" width="1095" height="495" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1280.680@0.0.1280.680" timestamp="1605339383944" />
+    <state x="0" y="0" width="587" height="680" key="find.popup" timestamp="1606815253164">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" width="587" height="680" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1606815253164" />
     <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1603618787985">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
